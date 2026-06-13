@@ -288,8 +288,7 @@ function winGame() {
     }, 1000);
 }
 
-// Override startBtn listener to go to mini game instead of mainCard
-startBtn.removeEventListener("click", startBtnClickHandler); // we'll need to rewrite the event listener assignment
+// startBtn listener has been replaced
 skipGameBtn.addEventListener("click", () => {
     gameActive = false;
     winGame();
